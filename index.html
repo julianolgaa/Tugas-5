@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Playstation Store</a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Produk</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="carousel-item active">
+        <img src="ps 1.avif" alt="Promo 1" />
+        <div class="carousel-caption">Playstation</div>
+      </div>
+      <div class="carousel-item">
+        <img src="ps4.webp" alt="Promo 2" />
+        <div class="carousel-caption">Promo 2</div>
+      </div>
+      <div class="carousel-item">
+        <img src="ps5.jpg" alt="Promo 3" />
+        <div class="carousel-caption">Promo 3</div>
+      </div>
+    </div>
+
+    <!-- Card Section -->
+    <div class="card-container">
+      <div class="card">
+        <img src="ps2.jpg" alt="Produk 1" />
+        <h3>Playstation 5</h3>
+        <p>Idr: Rp 11.000.000</p>
+        <button>Buy</button>
+      </div>
+      <div class="card">
+        <img src="ps3.jpg" alt="Produk 2" />
+        <h3>Playstation 4</h3>
+        <p>Idr: Rp 5.191.000</p>
+        <button>Buy</button>
+      </div>
+      <div class="card">
+        <img src="ps6.avif" alt="Produk 3" />
+        <h3>FC 24</h3>
+        <p>Idr: Rp 563.600</p>
+        <button>Buy</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Playstation Store. All rights reserved.</p>
+        <ul class="social-links">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .navbar .nav-links li {
+      margin-left: 1rem;
+    }
+
+    .navbar .nav-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .carousel-item {
+      display: none;
+    }
+
+    .carousel-item img {
+      width: 100%;
+    }
+
+    .carousel-item.active {
+      display: block;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      width: 30%;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer .social-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .footer .social-links li {
+      margin-left: 1rem;
+    }
+
+    .footer .social-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</html>
